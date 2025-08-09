@@ -6,15 +6,16 @@ import random
 nombre = {
     "mail":'joelmarinos8@gmail.com',
     "paswword":'ojky tpcr ejxx vfjs',
-    "destino":["marinosjoel@ceautonomo.edu.co"]
+    "destino":["marinosjoel@ceautonomo.edu.co", "joelmarinos8@gmail.com"]
 }   
-# nombre["destino"].append()
+
+#nombre["destino"].append()
 
 #FUNCIÓN 
 def enviar_alerta_facturacion(saldo_actual):
     try:
         mensaje = EmailMessage()
-        mensaje['Subject'] = '📌 Problema de facturación - Servicio iCloud+'
+        mensaje['Subject'] = ' Problema de facturación - Servicio iCloud+'
         mensaje['From'] =nombre["mail"]
         mensaje['To'] = nombre["destino"]
 
